@@ -613,9 +613,9 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         clangd = {},
-        docker_compose_language_service = {},
-        dockerls = {},
-        eslint = {},
+        --docker_compose_language_service = {},
+        --dockerls = {},
+        --eslint = {},
 
         gopls = {},
         -- pyright = {},
@@ -627,7 +627,7 @@ require('lazy').setup({
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
-        ts_ls = {},
+        --ts_ls = {},
         --
 
         lua_ls = {
@@ -933,7 +933,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
